@@ -51,7 +51,10 @@ class NotificationsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         showMessage("onViewCreated called")
     }
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        showMessage("Create is called")
+    }
     override fun onStart() {
         super.onStart()
         showMessage("Start is called")
@@ -87,7 +90,7 @@ class NotificationsFragment : Fragment() {
         _binding = null
     }
     fun showMessage(string:String){
-        Log.d("LifeCycle:", string);
+        Log.d("LifeCycle:", string)
     }
 
 }

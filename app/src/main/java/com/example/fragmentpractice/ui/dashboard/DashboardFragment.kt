@@ -38,6 +38,10 @@ class DashboardFragment : Fragment() {
 
         return root
     }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        showMessage("Create is called")
+    }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -89,6 +93,6 @@ class DashboardFragment : Fragment() {
         _binding = null
     }
     fun showMessage(string:String){
-        Log.d("LifeCycle:", string);
+        Log.d("LifeCycle:", string)
     }
 }

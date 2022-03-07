@@ -18,7 +18,10 @@ class HomeFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        showMessage("Create is called")
+    }
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -87,6 +90,6 @@ class HomeFragment : Fragment() {
         _binding = null
     }
     fun showMessage(string:String){
-        Log.d("LifeCycle:", string);
+        Log.d("LifeCycle:", string)
     }
 }
