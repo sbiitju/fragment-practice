@@ -89,10 +89,10 @@ class DashboardFragment : Fragment() {
     }
     override fun onDestroyView() {
         super.onDestroyView()
-        showMessage("On Destroy Called")
+        showMessage("OnDestroyView Called")
         _binding = null
     }
     fun showMessage(string:String){
-        Log.d("LifeCycle:", string)
+        Log.d("LifeCycle:", "Dashboard $string")
     }
 }

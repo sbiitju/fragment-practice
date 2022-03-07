@@ -86,11 +86,11 @@ class NotificationsFragment : Fragment() {
     }
     override fun onDestroyView() {
         super.onDestroyView()
-        showMessage("On Destroy Called")
+        showMessage("OnDestroyView Called")
         _binding = null
     }
-    fun showMessage(string:String){
-        Log.d("LifeCycle:", string)
+    private fun showMessage(string:String){
+        Log.d("LifeCycle:", "Notification $string")
     }
 
 }
