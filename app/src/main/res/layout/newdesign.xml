@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_main_color">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <ImageView
+            android:id="@+id/plant"
+            android:layout_width="270dp"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/abc"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_more_horiz_24"
+            app:layout_constraintEnd_toEndOf="@id/plant"
+            app:layout_constraintStart_toStartOf="@id/plant"
+            app:layout_constraintTop_toBottomOf="@id/plant" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_baseline_add_shopping_cart_24"
+            app:layout_constraintBottom_toTopOf="@id/plant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:layout_constraintBottom_toBottomOf="@id/cart"
+            app:layout_constraintEnd_toStartOf="@id/plant"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cart" />
+
+        <ImageView
+            android:id="@+id/height"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:src="@drawable/ic_baseline_height_24"
+            app:layout_constraintBottom_toTopOf="@id/heightTv"
+            app:layout_constraintEnd_toStartOf="@id/plant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/plant" />
+
+        <TextView
+            android:id="@+id/heightTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textColor="@color/white_merror"
+            app:layout_constraintBottom_toTopOf="@id/heightDes"
+            app:layout_constraintEnd_toStartOf="@id/plant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/height"
+            tools:layout_editor_absoluteY="97dp" />
+
+        <TextView
+            android:id="@+id/heightDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="36-37 cm"
+            android:textColor="@color/white_merror"
+            app:layout_constraintBottom_toTopOf="@id/temp"
+            app:layout_constraintEnd_toStartOf="@id/plant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heightTv" />
+
+        <ImageView
+            android:id="@+id/temp"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_whatshot_24"
+            app:layout_constraintBottom_toTopOf="@id/tempTv"
+            app:layout_constraintEnd_toStartOf="@id/plant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heightDes" />
+
+        <TextView
+            android:id="@+id/tempTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textColor="@color/white_merror"
+            app:layout_constraintBottom_toTopOf="@id/tempDes"
+            app:layout_constraintEnd_toEndOf="@id/temp"
+            app:layout_constraintStart_toStartOf="@id/temp"
+            app:layout_constraintTop_toBottomOf="@id/temp" />
+
+        <TextView
+            android:id="@+id/tempDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="36-37 cm"
+            android:textColor="@color/white_merror"
+            app:layout_constraintBottom_toTopOf="@id/plantSrc"
+            app:layout_constraintEnd_toEndOf="@id/tempTv"
+            app:layout_constraintStart_toStartOf="@id/tempTv"
+            app:layout_constraintTop_toBottomOf="@id/tempTv" />
+
+        <ImageView
+            android:id="@+id/plantSrc"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_filter_vintage_24"
+            app:layout_constraintBottom_toTopOf="@id/planttv"
+            app:layout_constraintEnd_toEndOf="@id/tempDes"
+            app:layout_constraintStart_toStartOf="@id/tempDes"
+            app:layout_constraintTop_toBottomOf="@id/tempDes" />
+
+        <TextView
+            android:id="@+id/planttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Something"
+            android:textColor="@color/white_merror"
+            app:layout_constraintBottom_toTopOf="@id/lasttv"
+            app:layout_constraintEnd_toEndOf="@id/plantSrc"
+            app:layout_constraintStart_toStartOf="@id/plantSrc"
+            app:layout_constraintTop_toBottomOf="@id/plantSrc" />
+
+        <TextView
+            android:id="@+id/lasttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="write Something"
+            android:textColor="@color/white_merror"
+            app:layout_constraintBottom_toBottomOf="@id/imageView2"
+            app:layout_constraintEnd_toEndOf="@id/planttv"
+            app:layout_constraintStart_toStartOf="@id/planttv"
+            app:layout_constraintTop_toBottomOf="@id/planttv" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline_1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/snakeplants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Snake-Plants"
+                    android:textColor="@color/background_main_color"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/a_constraintset_is_a_lightweight_object_that_represents_the_constraints_margins_and_padding_of_all_child_elements_within_a_constraintlayout_when_you_apply_a_constraintset_to_a_displayed_constraintlayout_the_layout_updates_the_constraints_of_all_of_its_children_to_build_an_animation_using_constraintsets_you_can_then_load_a_constraintset_from_the_second_keyframe_file_and_apply_it_to_the_displayed_constraintlayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/snakeplants"
+                    app:layout_constraintTop_toBottomOf="@id/snakeplants" />
+
+                <TextView
+                    android:id="@+id/totalprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Total Price"
+                    android:textColor="@color/background_main_color"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@id/description"
+                    app:layout_constraintTop_toBottomOf="@id/description" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="$2"
+                    android:textColor="@color/background_main_color"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="@id/totalprice"
+                    app:layout_constraintStart_toStartOf="@id/totalprice"
+                    app:layout_constraintTop_toBottomOf="@id/totalprice" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/background_main_color"
+                    android:text="Add to Cart"
+                    app:layout_constraintBottom_toBottomOf="@id/amount"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/totalprice"
+                    app:layout_constraintTop_toBottomOf="@id/description" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -5,6 +5,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="_4_3_88"><b> 4.3</b>(88)</string>
     <string name="this_is_also_testing_purpose">This is also testing purpose</string>
+    <string name="a_constraintset_is_a_lightweight_object_that_represents_the_constraints_margins_and_padding_of_all_child_elements_within_a_constraintlayout_when_you_apply_a_constraintset_to_a_displayed_constraintlayout_the_layout_updates_the_constraints_of_all_of_its_children_to_build_an_animation_using_constraintsets_you_can_then_load_a_constraintset_from_the_second_keyframe_file_and_apply_it_to_the_displayed_constraintlayout">A ConstraintSet is a lightweight object that represents the constraints, margins, and padding of all child elements within a ConstraintLayout. When you apply a ConstraintSet to a displayed ConstraintLayout, the layout updates the constraints of all of its children. To build an animation using ConstraintSets,You can then load a ConstraintSet from the second keyframe file and apply it to the displayed ConstraintLayout.</string>
     <string-array name="gender">
         <item>Male</item>
         <item>Female</item>
