@@ -8,8 +8,14 @@
         <entry key="..\:/Users/BS328/AndroidStudioProjects/FragmentPractice/app/src/main/res/drawable/radius.xml" value="0.21" />
         <entry key="..\:/Users/BS328/AndroidStudioProjects/FragmentPractice/app/src/main/res/drawable/right_radius.xml" value="0.1" />
         <entry key="..\:/Users/BS328/AndroidStudioProjects/FragmentPractice/app/src/main/res/layout/activity_main.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/BS328/AndroidStudioProjects/FragmentPractice/app/src/main/res/layout/fragment_home.xml" value="0.16" />
+        <entry key="..\:/Users/BS328/AndroidStudioProjects/FragmentPractice/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/BS328/AndroidStudioProjects/FragmentPractice/app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="..\:/Users/BS328/AndroidStudioProjects/FragmentPractice/app/src/main/res/layout/fragment_notifications.xml" value="0.5" />
+        <entry key="..\:/Users/BS328/AndroidStudioProjects/FragmentPractice/app/src/main/res/layout/frame.xml" value="0.1" />
+        <entry key="..\:/Users/BS328/AndroidStudioProjects/FragmentPractice/app/src/main/res/layout/practice.xml" value="0.18" />
         <entry key="..\:/Users/BS328/AndroidStudioProjects/FragmentPractice/app/src/main/res/layout/ruman.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/BS328/AndroidStudioProjects/FragmentPractice/app/src/main/res/layout/sign_up.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/BS328/AndroidStudioProjects/FragmentPractice/app/src/main/res/layout/test.xml" value="0.2" />
         <entry key="..\:/Users/BS328/AndroidStudioProjects/FragmentPractice/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
