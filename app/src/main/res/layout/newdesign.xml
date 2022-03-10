@@ -28,8 +28,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.5" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -44,27 +43,31 @@
             android:id="@+id/cart"
             android:layout_width="36dp"
             android:layout_height="36dp"
+            android:layout_margin="20dp"
             android:src="@drawable/ic_baseline_add_shopping_cart_24"
-            app:layout_constraintBottom_toTopOf="@id/plant"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.95"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:layout_width="36dp"
             android:layout_height="36dp"
+            android:layout_margin="20dp"
             android:src="@drawable/ic_baseline_arrow_back_ios_24"
-            app:layout_constraintBottom_toBottomOf="@id/cart"
-            app:layout_constraintEnd_toStartOf="@id/plant"
-            app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/cart" />
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Group
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icon_group"
+            app:constraint_referenced_ids="height,heightTv,heightDes,temp,tempTv,tempDes,plantSrc,planttv,lasttv"
+            android:visibility="visible"
+            />
 
         <ImageView
             android:id="@+id/height"
-            android:layout_width="37dp"
-            android:layout_height="37dp"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
             android:src="@drawable/ic_baseline_height_24"
             app:layout_constraintBottom_toTopOf="@id/heightTv"
             app:layout_constraintEnd_toStartOf="@id/plant"
@@ -130,8 +133,8 @@
         <ImageView
             android:id="@+id/plantSrc"
             android:layout_width="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:src="@drawable/ic_baseline_filter_vintage_24"
             app:layout_constraintBottom_toTopOf="@id/planttv"
             app:layout_constraintEnd_toEndOf="@id/tempDes"
@@ -177,13 +180,12 @@
                     android:id="@+id/snakeplants"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
                     android:text="Snake-Plants"
                     android:textColor="@color/background_main_color"
                     android:textSize="30dp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.2"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:src="@drawable/kacci"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We want to make a project"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:padding="10dp"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Batch"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Mobile Number"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Email"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:entries="@array/gender"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+
+</LinearLayout>
