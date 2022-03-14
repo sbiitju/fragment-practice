@@ -1,8 +1,10 @@
 package com.example.fragmentpractice.classObject
 
-import com.example.fragmentpractice.classObject.Color.*
-import kotlin.math.sin
+import android.os.Build
+import androidx.annotation.RequiresApi
 
+
+@RequiresApi(Build.VERSION_CODES.N)
 fun main() {
 //    val aquarium=Aquarium(30)
 //    println(aquarium.volume)
@@ -17,18 +19,50 @@ fun main() {
 //    shark.eat()
 //    shark.makePrint(20)
 
-    var newFish = NewFish()
-    newFish.eat()
-    values().forEach {
-        println(it)
+//    var newFish = NewFish()
+//    newFish.eat()
+//    values().forEach {
+//        println(it)
+//    }
+//    Color.Red.doColor()
+//    println(SingleTon()?.shahin)
+//    println(SingleTon())
+//    println(SingleTon())
+//    println(SingleTon())
+//    println(SingleTon())
+    fun String.hasSpace():Boolean{
+    val found = this.find { it == ' ' }
+    return found != null
     }
-    Color.Red.doColor()
-    println(SingleTon()?.shahin)
-    println(SingleTon())
-    println(SingleTon())
-    println(SingleTon())
-    println(SingleTon())
+    println("ShahinBashar".hasSpace())
+    val element="Shahin" to "Sithi"
+    print(element.toList()[1])
+    val student=Student("Shahin Bashar","01613162522","shahin@kambaii.com")
+    val (name,_,email)=student
+    println(name+email)
+    val list= mutableListOf<String>()
+    list.add("Shahin")
+    list.add("Saheb Ali")
+    list.add("sithi")
+    list.add("Afsana")
+    println(list.subList(1,3))
+    println(list.sumBy {
+        it.length
+    })
+    for (i in list.iterator()){
+        println("$i ")
+    }
+    val exampleOfHashMap= hashMapOf("Shahin" to "Sithi","Sajib" to "Sithi","Habib" to "Tish","Salman" to "Luna")
+    println(exampleOfHashMap.getOrDefault("Bashar","I didn't know"))
+    println(exampleOfHashMap.getOrElse("Bashar"){
+        println("no data found")
+        "Shahin Bashar"
+    })
+
+
+
 }
+data class Student(var name: String,var number:String,var email:String)
 
 interface DoColor {
     fun doColor()
